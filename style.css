@@ -1,0 +1,495 @@
+body {
+	background-color: #02020e;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+/*SPACE*/
+
+.space {
+	width: 100%;
+	position: relative;
+	height: 40%;
+}
+
+/*WITCH*/
+
+.blocWitch {
+	width: 100%;
+	position: absolute;
+}
+
+.pathWitch {
+	width: 100%;
+
+}
+
+.witch {
+	width: 5%;
+	height: 63%;
+	position: relative;
+	fill: white;
+	top: -350px;
+}
+
+/*SKY*/
+
+.sky {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*STARS*/
+
+.star {
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 0 10px white;
+
+}
+
+/*MOON*/
+
+.lune {
+	width: 7%;
+    overflow: hidden;
+    position: absolute;
+    height: 50%;
+    left: 85%;
+    top: 10%;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.circleMoon {
+	fill:#d3d3d2;
+}
+
+.pathMoon {
+	fill:#e8e8e8;
+}
+
+.secondPathMoon {
+	fill: #a3a2a2;
+	opacity: 0.5;
+}
+
+/*ET*/ 
+
+.ET {
+	width: 2%;
+    overflow: hidden;
+    position: absolute;
+    height: 50%;
+    left: 87.5%;
+    top: 15%;
+}
+
+
+/*PANNEAU PAPI*/
+
+.blocNoir {
+	width: 20%;
+    height: 100%;
+    position: absolute;
+    top: -5%;
+    left: 42%;
+    animation: rotateZ 10s infinite;
+}
+
+@keyframes rotateZ {
+	0% {
+		transform: rotateZ(5deg);
+	}
+
+	50% {
+		transform: rotateZ(-5deg);
+	}
+
+	100% {
+		transform: rotateZ(5deg);
+	}
+}
+
+/*ROPE*/
+
+.rope {
+	fill:#010101;
+}
+
+/*PANEL*/
+
+.panel {
+	fill:#382112;
+}
+
+/*RING*/
+
+.ring {
+	fill:#c3750e;
+}
+
+/*SANG*/
+
+.blod {
+	fill:red;
+}
+
+/*LETTER*/
+
+.letterPapi {
+	filter: drop-shadow(0 0 10px #d37d00);
+	stroke: #d37d00;
+	fill:none;
+	stroke-miterlimit:10;
+	stroke-width:5px;
+}
+
+.letterP {
+	animation: letterP 4s infinite;
+	transition: none;
+}
+
+@keyframes letterP {
+	0% {
+	 	stroke: #d37d00; 
+	 	filter: drop-shadow(0 0 10px #d37d00);
+	}
+
+  	5% {
+  		stroke: black;
+  		filter: none;
+
+	}
+
+	40% {
+  		stroke: black;
+  		filter: none;
+
+	}
+
+  	45% { 
+  		stroke: #d37d00; 
+  		filter: drop-shadow(0 0 10px #d37d00);
+  	}
+
+  	50% {
+  		stroke: black;
+  		filter: none;
+
+	}
+
+	55% { 
+  		stroke: #d37d00; 
+  		filter: drop-shadow(0 0 10px #d37d00);
+  	}
+
+	90% { 
+  		stroke: #d37d00; 
+  		filter: drop-shadow(0 0 10px #d37d00);
+  	}
+
+  	95% {
+  		stroke: black;
+  		filter: none;
+
+	}
+
+	100% { 
+  		stroke: #d37d00; 
+  		filter: drop-shadow(0 0 10px #d37d00);
+  	}
+}
+
+
+.panneauPapi {
+	position: relative;
+	top: -16%;
+}
+
+
+
+/*CLOUD*/
+
+
+.nuage {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: 30%;
+    z-index: 100;
+}
+
+.multiCloud {
+    opacity: 40%;
+    width: 60%;
+    position: absolute;
+    fill:#5e5e5e;
+	stroke:none;
+	stroke-miterlimit:10;
+}
+
+
+.firstCloud {
+	animation: cloudFirst 60s alternate infinite;
+}
+
+@keyframes cloudFirst {
+
+	0% {
+		margin-left: 0%;
+	}
+
+	50% {
+		margin-left: 100%
+	}
+
+	100% {
+		margin-left: 0%;
+	}
+}
+
+
+.secondCloud {
+	top: 8%;
+	animation: cloudSecond 60s infinite;
+}
+
+@keyframes cloudSecond {
+	0% {
+		margin-left: 20%
+	}
+
+	45% {
+		margin-left: 100%
+	}
+
+	85% {
+		margin-left: 0%
+	}
+
+	100% {
+		margin-left: 20%
+	}
+}
+
+
+.thirdCloud {
+	top: 16%;
+	animation: cloudThird 30s infinite;
+}
+
+@keyframes cloudThird {
+	0% {
+		margin-left: 70%;
+	}
+
+	25% {
+		margin-left: 100%;
+	}
+
+	65% {
+		margin-left: 0%;
+	}
+
+	100% {
+		margin-left: 70%;
+	}
+}
+
+.fourthCloud {
+	top: 24%;
+	animation: cloudFourth 30s infinite;
+}
+
+@keyframes cloudFourth {
+	0% {
+		margin-left: 50%;
+	}
+
+	25% {
+		margin-left: 100%;
+	}
+
+	75% {
+		margin-left: 0%;
+	}
+
+	100% {
+		margin-left: 50%;
+	}
+}
+
+
+.fifthCloud {
+	top: 32%;
+	animation: cloudFifth 60s infinite;
+}
+
+@keyframes cloudFifth {
+	0% {
+		margin-left: 10%;
+	}
+
+	40% {
+		margin-left: 100%;
+	}
+
+	90% {
+		margin-left: 0%;
+	}
+
+	100% {
+		margin-left: 10%;
+	}
+}
+
+.sixthCloud {
+	top: 40%;
+	animation: cloudSixth 30s infinite;
+}
+
+@keyframes cloudSixth {
+	0% {
+		margin-left: 90%;
+	}
+
+	5% {
+		margin-left: 100%;
+	}
+
+	55% {
+		margin-left: 0%;
+	}
+
+	100% {
+		margin-left: 90%;
+	}
+}
+
+
+/*FIR*/
+
+.fir {
+	width: 100%;
+    position: absolute;
+    z-index: 50;
+    height: 40%;
+}
+
+.allFire {
+	position: absolute;
+	width: 5%;
+}
+
+.fifthFir {
+    top: 15%;
+    left: 40%;
+}
+
+.sixthFir {
+	top: 25%;
+	left: 60%;
+}
+
+.seventhFir {
+    top: 15%;
+    left: 75%;
+}
+
+.heigthFir {
+	top: 16%;
+	left: 88%;
+}
+
+
+.bois {
+	fill:#160a02;
+	stroke-miterlimit:10;
+}
+
+.branch {
+	fill:#003e08;
+}
+
+
+/*PLAIN*/
+
+#plain {
+	position: relative;
+    top: 65px;
+    z-index: 10;
+}
+
+.topPlain {
+	fill:#173f0a;
+}
+
+.topPlain, .middlePlaine, .bottomPlaine {
+	stroke:#000;
+	stroke-miterlimit:10;
+} 
+
+.middlePlaine {
+	fill:#215609;
+} 
+
+.bottomPlaine {
+	fill:#30720d;
+}
+
+.montain {
+	fill:#6d6d6d;
+}
+
+.lg {
+	fill:white
+}
+
+
+/*ZOMBIE*/
+
+.franck {
+	position: absolute;
+    top: 37%;
+    left: 91%;
+    width: 4%;
+}
+
+@font-face { 
+	font-family: GhastlyPanic;
+	 src: url('font/GhastlyPanic.ttf');
+}
+
+.pierreTombale {
+	fill:#676766;
+} 
+.ombrePierre {
+	fill:#a5a4a3;
+}
+
+.textFranck {
+	font-size:112px;
+	fill:black;
+	font-family:GhastlyPanic;
+}
+
+.blodFranck {
+	fill:red;
+}
+
+.handZombie {
+	position: absolute;
+    left: 90%;
+    width: 6%;
+    top: 47%;
+    height: 10%;
+}
+
+
+
+
